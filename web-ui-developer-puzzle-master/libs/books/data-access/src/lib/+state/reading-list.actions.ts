@@ -17,6 +17,11 @@ export const addToReadingList = createAction(
   props<{ book: Book }>()
 );
 
+export const updateReadingList = createAction(
+  '[Reading List API] Updated the list',
+  props<{ book: Book }>()
+);
+
 export const failedAddToReadingList = createAction(
   '[Reading List API] Failed add to list',
   props<{ book: Book }>()
